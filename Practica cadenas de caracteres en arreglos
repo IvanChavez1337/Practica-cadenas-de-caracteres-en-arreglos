@@ -1,0 +1,24 @@
+//Lectura de cadena de caracteres y luego imprimirlas todas
+#include<stdio.h>
+int main(){
+	
+	char nombres[3][50];
+	
+	printf("Ingrese los nombres completos de las personas\n\n");
+	
+	for(int i=0;i<3;i++){                                    //Pedir los nombres y guardar la cadena de caracteres
+		printf("Dame el nombre: %d\n",i+1);
+			fgets(nombres[i],sizeof(nombres[i]),stdin);
+	}
+	
+	printf("\nLos nombres son:\n\n");
+	
+	for(int i=0;i<3;i++){                                   //Imprimir cadenas de caracteres ingresadas 
+		printf("%s\n",nombres[i]);
+	}
+	
+	
+	
+	return 0;
+}
+
